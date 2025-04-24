@@ -23,7 +23,7 @@
     <li><a class="dropdown-item" href="../articles/basics_modes">Modes</a></li>
     <li><a class="dropdown-item" href="../articles/basics_facets">Facets</a></li>
     <li><a class="dropdown-item" href="../articles/basics_legends">Legends</a></li>
-    <li><a class="dropdown-item" href="../articles/basics_basemaps">Basemaps</a></li>
+    <li><a class="dropdown-item" href="../articles/basics_basemaps">Basemaps (updated!)</a></li>
     <li><a class="dropdown-item" href="../articles/basics_components">Components</a></li>
     <li><a class="dropdown-item" href="../articles/basics_charts">Charts</a></li>
     <li><a class="dropdown-item" href="../articles/basics_layout">Layout</a></li>
@@ -55,7 +55,8 @@
   <ul class="dropdown-menu" aria-labelledby="dropdown-advanced"><li><a class="dropdown-item" href="../articles/adv_shiny">Shiny integration</a></li>
     <li><a class="dropdown-item" href="../articles/adv_groups">Layer groups (view mode only)</a></li>
     <li><a class="dropdown-item" href="../articles/adv_multivariate">Multivariate visual variables</a></li>
-    <li><a class="dropdown-item" href="../articles/adv_positions">Positioning of components</a></li>
+    <li><a class="dropdown-item" href="../articles/adv_positions">Positioning of components (updated!)</a></li>
+    <li><a class="dropdown-item" href="../articles/adv_comp_group">Grouping of components (new!)</a></li>
     <li><a class="dropdown-item" href="../articles/adv_options">Options and styles</a></li>
     <li><a class="dropdown-item" href="../articles/adv_margins">Margins and aspect ratio</a></li>
     <li><a class="dropdown-item" href="../articles/adv_extensions">Extending tmap</a></li>
@@ -202,7 +203,7 @@
         </dt>
         <dd>Map layer: simple features</dd>
       </dl></div><div class="section level2">
-      <h2 id="specify-facets">Specify facets<a class="anchor" aria-label="anchor" href="#specify-facets"></a></h2>
+      <h2 id="specify-facets-and-animations">Specify facets and animations<a class="anchor" aria-label="anchor" href="#specify-facets-and-animations"></a></h2>
 
 
 
@@ -218,6 +219,12 @@
 
         </dt>
         <dd>Specify facets</dd>
+      </dl><dl><dt>
+
+          <code><a href="tm_animate.html">tm_animate()</a></code> <code><a href="tm_animate.html">tm_animate_slow()</a></code>
+
+        </dt>
+        <dd>Specify an animation (experimental)</dd>
       </dl></div><div class="section level2">
       <h2 id="add-auxiliary-map-layers">Add auxiliary map layers<a class="anchor" aria-label="anchor" href="#add-auxiliary-map-layers"></a></h2>
 
@@ -402,7 +409,7 @@
         <dd>Map component: manual legend</dd>
       </dl><dl><dt>
 
-          <code><a href="tm_extra_innner_margin.html">tm_place_legends_right()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_left()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_bottom()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_top()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_inside()</a></code> <code><a href="tm_extra_innner_margin.html">tm_extra_innner_margin()</a></code>
+          <code><a href="tm_extra_innner_margin.html">tm_place_legends_right()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_left()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_bottom()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_top()</a></code> <code><a href="tm_extra_innner_margin.html">tm_place_legends_inside()</a></code> <code><a href="tm_extra_innner_margin.html">tm_extra_inner_margin()</a></code>
 
         </dt>
         <dd>tmap layout: helper functions</dd>
@@ -423,6 +430,29 @@
 
         </dt>
         <dd>Legend charts</dd>
+      </dl></div><div class="section level2">
+      <h2 id="configure-legend-and-component-position">Configure legend and component position<a class="anchor" aria-label="anchor" href="#configure-legend-and-component-position"></a></h2>
+
+
+
+
+    </div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="tm_pos.html">tm_pos()</a></code> <code><a href="tm_pos.html">tm_pos_in()</a></code> <code><a href="tm_pos.html">tm_pos_out()</a></code> <code><a href="tm_pos.html">tm_pos_on_top()</a></code> <code><a href="tm_pos.html">tm_pos_auto_out()</a></code> <code><a href="tm_pos.html">tm_pos_auto_in()</a></code>
+
+        </dt>
+        <dd>Set the position of map components</dd>
+      </dl><dl><dt>
+
+          <code><a href="tm_comp_group.html">tm_comp_group()</a></code>
+
+        </dt>
+        <dd>Group components</dd>
       </dl></div><div class="section level2">
       <h2 id="set-layout-options">Set layout options<a class="anchor" aria-label="anchor" href="#set-layout-options"></a></h2>
 
@@ -495,7 +525,7 @@
         <dd>Create a style catalogue</dd>
       </dl><dl><dt>
 
-          <code><a href="tmap_mode.html">tmap_mode()</a></code> <code><a href="tmap_mode.html">ttm()</a></code> <code><a href="tmap_mode.html">ttmp()</a></code>
+          <code><a href="tmap_mode.html">tmap_mode()</a></code> <code><a href="tmap_mode.html">ttm()</a></code> <code><a href="tmap_mode.html">rtm()</a></code> <code><a href="tmap_mode.html">ttmp()</a></code> <code><a href="tmap_mode.html">rtmp()</a></code>
 
         </dt>
         <dd>Set tmap mode to static plotting or interactive viewing</dd>
@@ -644,12 +674,6 @@
 
         </dt>
         <dd>tmap function to define a constant visual value</dd>
-      </dl><dl><dt>
-
-          <code><a href="tm_pos.html">tm_pos()</a></code> <code><a href="tm_pos.html">tm_pos_in()</a></code> <code><a href="tm_pos.html">tm_pos_out()</a></code> <code><a href="tm_pos.html">tm_pos_on_top()</a></code> <code><a href="tm_pos.html">tm_pos_auto_out()</a></code> <code><a href="tm_pos.html">tm_pos_auto_in()</a></code>
-
-        </dt>
-        <dd>Set the position of map components</dd>
       </dl><dl><dt>
 
           <code><a href="tm_seq.html">tm_seq()</a></code>

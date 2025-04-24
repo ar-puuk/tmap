@@ -2,6 +2,7 @@ pandoc: 3.1.11
 pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
+  adv_comp_group: adv_comp_group.html
   adv_extensions: adv_extensions.html
   adv_groups: adv_groups.html
   adv_margins: adv_margins.html
@@ -26,12 +27,16 @@ articles:
   examples_raster: examples_raster.html
   examples_terrain: examples_terrain.html
   examples_topo_Africa: examples_topo_Africa.html
+  ext_cartogram: ext_cartogram.html
+  ext_glyphs: ext_glyphs.html
+  ext_mapgl: ext_mapgl.html
+  ext_networks: ext_networks.html
   foundations_crs: foundations_crs.html
   foundations_gg: foundations_gg.html
   versus_ggplot2: versus_ggplot2.html
   versus_mapsf: versus_mapsf.html
   versus_mapview: versus_mapview.html
-last_built: 2025-03-15T01:14Z
+last_built: 2025-04-24T17:07Z
 urls:
   reference: https://r-tmap.github.io/tmap/reference
   article: https://r-tmap.github.io/tmap/articles
